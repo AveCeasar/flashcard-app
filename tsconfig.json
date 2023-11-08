@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "es6", // or a higher ECMAScript version if you prefer
+      "module": "commonjs",
+      "outDir": "./dist", // where to put the compiled JS files
+      "strict": true, // enables strict type-checking options
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    },
+    "include": ["backend/**/*"], // adjust this to where your source files are
+    "exclude": ["node_modules", "dist"]
+  }
