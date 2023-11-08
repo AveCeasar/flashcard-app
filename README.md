@@ -1,42 +1,36 @@
-### Project Overview:
+### MVP-Focused Project Overview:
 
 **Objective:**
-Develop an online flash card service for English and Polish language learning with the following features:
+To develop a streamlined and effective MVP for an online flash card service that facilitates English and Polish language learning, with a foundation built on modularity and TypeScript for robustness and scalability.
 
-- **User Roles:** Admin, Teacher, Student.
-- **Content Management:** Easy creation and modification of flash card sets by teachers and admin.
-- **Flash Cards:** Contain English and Polish terms, with future expansion to include audio clips and sample sentences.
-- **User Accounts:** Students can create accounts with a nickname and email, requiring email verification.
-- **Sets Management:** Flash card sets can be certified (public) or private, with premium options for access.
-- **Testing Methods:** Include matching words, self-assessment checks, and multiple-choice quizzes.
-- **Progress Tracking:** Monitor student progress and inactivity, with an admin dashboard for analytics.
-- **Platform:** Initially a mobile-responsive website, with plans for a mobile app wrapper with ads in the future.
-- **Scalability:** Start small with the potential to scale up to 10,000 users within a year.
-- **Budget and Timeline:** Limited budget with a need for a quick launch of an MVP.
+**MVP Core Features:**
 
-### Technical Requirements:
+- **User Management:** Essential roles for Admin, Teacher, and Student, with straightforward profile management.
+- **Flash Cards:** Core functionality to create, view, and manage a basic set of flash cards with English and Polish terms.
+- **Access Control:** Simple public and private settings for flash card sets to validate the content access model.
+- **Testing and Assessment:** Fundamental testing features such as word matching and basic quizzes to establish the learning efficacy.
+- **Progress Tracking:** Basic tracking of user progress to understand user engagement and learning outcomes.
 
-- **Backend:** Node.js with Express, RESTful API (or GraphQL), authentication with JWT or OAuth.
-- **Frontend:** React for a dynamic, responsive UI, with a focus on mobile-first design.
-- **Database:** MongoDB or PostgreSQL, accommodating future features like audio and sentences.
-- **Hosting:** Cloud services with scalability options, such as AWS Free Tier or Heroku.
-- **Development Tools:** Git for version control, with a project management tool like Trello or GitHub Projects.
+**Technical Essentials:**
 
-### Project Structure:
+- **Backend:** Node.js with Express, utilizing TypeScript for improved code reliability and maintenance.
+- **Frontend:** React with TypeScript, ensuring a consistent and maintainable codebase with a focus on modularity.
+- **Database:** PostgreSQL for robust data management and relational data structures, which align with the educational content model.
+- **Hosting:** A scalable hosting solution like Heroku to support the MVP phase and early growth.
 
-- Backend server setup with user authentication and API endpoints for managing flash cards and sets.
-- Frontend application with components for user interaction and views for different user roles.
-- Database with initial setup and migrations for user and flash card data models.
+**Modularity:**
+A modular codebase to facilitate future expansion and maintenance, allowing individual features to be updated or improved without impacting the entire system.
 
 ### Development Strategy:
 
-- Start with backend development, focusing on core functionalities like user management and flash card APIs.
-- Proceed with frontend development, ensuring a seamless user experience on mobile devices.
-- Integrate frontend and backend, with thorough testing of user flows and data management.
-- Deploy the MVP, gather user feedback, and iterate on the product.
+- Implement an agile development approach, focusing on delivering a functional MVP that provides core learning and testing capabilities.
+- Ensure clean code practices and a well-organized project structure that supports modularity and ease of future development.
 
 ### Future Considerations:
 
-- Incorporate audio clips and sample sentences for flash cards.
-- Develop a dedicated mobile app for better user engagement.
-- Explore additional features like gamification and social learning tools.
+- **Expanded Content Management:** Advanced features for creating and editing flash card sets, including multimedia content like audio clips and sample sentences.
+- **Enhanced Access Control:** Development of a certification process for public content and premium access options.
+- **Diverse Testing Methods:** Introduction of more sophisticated testing mechanisms based on pedagogical research.
+- **Advanced Progress Tracking:** Implementation of comprehensive analytics and predictive models to tailor the learning experience.
+- **Cross-Platform App:** Conversion of the web application into a native mobile experience.
+- **Scalable Infrastructure:** Transition to a cloud infrastructure designed for larger-scale growth.
