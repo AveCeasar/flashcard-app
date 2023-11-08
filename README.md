@@ -34,3 +34,43 @@ A modular codebase to facilitate future expansion and maintenance, allowing indi
 - **Advanced Progress Tracking:** Implementation of comprehensive analytics and predictive models to tailor the learning experience.
 - **Cross-Platform App:** Conversion of the web application into a native mobile experience.
 - **Scalable Infrastructure:** Transition to a cloud infrastructure designed for larger-scale growth.
+
+**Current WIP Structure**
+
+my-flashcard-app-backend/
+|-- src/
+|   |-- controllers/        # Business logic for handling requests
+|   |-- middleware/         # Custom middleware, e.g., for authentication
+|   |-- models/             # Database models (e.g., using Sequelize or TypeORM)
+|   |-- routes/             # Route definitions connecting to controllers
+|   |-- services/           # Service layer for business logic
+|   |-- utils/              # Utility functions and helpers
+|   |-- validations/        # Request data validation schemas (using Joi or Yup)
+|   |-- app.ts              # Main application setup file (Express app)
+|   `-- index.ts            # Entry point of the application
+|-- tests/                  # Test files for your application
+|-- node_modules/           # Node.js created folder for all the project dependencies
+|-- package.json            # Project metadata and dependencies
+|-- tsconfig.json           # TypeScript configuration
+|-- .eslintrc               # ESLint configuration
+|-- .prettierrc             # Prettier configuration
+`-- .gitignore              # Specifies intentionally untracked files to ignore
+
+my-flashcard-app-frontend/
+|-- public/                 # Static files
+|-- src/
+|   |-- components/         # Reusable UI components
+|   |-- contexts/           # React contexts for state management (if not using Redux)
+|   |-- hooks/              # Custom React hooks
+|   |-- pages/              # Components representing pages
+|   |-- routes/             # Routing logic (e.g., using React Router)
+|   |-- services/           # Services for handling API calls
+|   |-- styles/             # Global styles and styled-components themes
+|   |-- utils/              # Utility functions and helpers
+|   |-- App.tsx             # Main React component
+|   |-- index.tsx           # Entry point of the React application
+|   `-- react-app-env.d.ts  # TypeScript React environment declaration file
+|-- node_modules/           # Folder for project dependencies
+|-- package.json            # Project metadata and dependencies
+|-- tsconfig.json           # TypeScript configuration
+`-- .gitignore              # Specifies intentionally untracked files to ignore
